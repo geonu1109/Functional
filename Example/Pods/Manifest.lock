@@ -1,0 +1,16 @@
+PODS:
+  - Functional (0.1.0)
+
+DEPENDENCIES:
+  - Functional (from `../`)
+
+EXTERNAL SOURCES:
+  Functional:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Functional: 144ffb929ea18de7d727368c226eac478f31a881
+
+PODFILE CHECKSUM: 8a58124caac7ec9339e07952948077f9893a612d
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,22 @@
+{
+  "name": "Functional",
+  "version": "0.1.0",
+  "summary": "A short description of Functional.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/geonu1109@gmail.com/Functional",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "geonu1109@gmail.com": "geoun1109@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/geonu1109@gmail.com/Functional.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Functional/Classes/**/*"
+}
