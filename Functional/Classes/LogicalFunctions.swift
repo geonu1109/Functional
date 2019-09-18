@@ -5,18 +5,18 @@
 //  Created by Geonu Jeon on 2019/09/19.
 //
 
-func and(_ lhs: Bool, _ rhs: Bool) -> Bool {
+public func and(_ lhs: Bool, _ rhs: Bool) -> Bool {
     return lhs && rhs
 }
 
-func or(_ lhs: Bool, _ rhs: Bool) -> Bool {
+public func or(_ lhs: Bool, _ rhs: Bool) -> Bool {
     return lhs || rhs
 }
 
-func not(_ value: Bool) -> Bool {
+public func not(_ value: Bool) -> Bool {
     return !value
 }
 
-func xor(_ lhs: Bool, _ rhs: Bool) -> Bool {
+public func xor(_ lhs: Bool, _ rhs: Bool) -> Bool {
     return lhs != rhs
 }
