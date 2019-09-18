@@ -22,7 +22,7 @@ Functional is a library that simplifies functional programming in Swift.
 This library enable to use functional interfaces of Java, higher-order functions of Kotlin, and more in Swift.
                        DESC
 
-  s.homepage         = 'https://github.com/geonu1109@gmail.com/Functional'
+  s.homepage         = 'https://github.com/geonu1109/Functional'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'geonu1109@gmail.com' => 'geoun1109@gmail.com' }
