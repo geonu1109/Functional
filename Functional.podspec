@@ -26,7 +26,7 @@ This library enable to use functional interfaces of Java, higher-order functions
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'geonu1109@gmail.com' => 'geoun1109@gmail.com' }
-  s.source           = { :git => 'https://github.com/geonu1109@gmail.com/Functional.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/geonu1109/Functional.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
