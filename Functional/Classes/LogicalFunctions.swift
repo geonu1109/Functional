@@ -2,7 +2,7 @@
 //  LogicalFunctions.swift
 //  Functional
 //
-//  Created by 전건우 on 2019/09/19.
+//  Created by Geonu Jeon on 2019/09/19.
 //
 
 func and(_ lhs: Bool, _ rhs: Bool) -> Bool {

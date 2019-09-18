@@ -2,7 +2,7 @@
 //  Optional.swift
 //  Functional
 //
-//  Created by 전건우 on 2019/09/18.
+//  Created by Geonu Jeon on 2019/09/18.
 //
 
 extension Optional {
