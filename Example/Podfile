@@ -1,0 +1,6 @@
+use_frameworks!
+target 'Functional_Tests' do
+  pod 'Functional', :path => '../'
+  
+  
+end
