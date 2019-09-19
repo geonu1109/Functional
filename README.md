@@ -22,7 +22,7 @@ pod 'Functional'
 
 ## Author
 
-geonu1109@gmail.com, geoun1109@gmail.com
+Geonu Jeon, geoun1109@gmail.com
 
 ## License
 
