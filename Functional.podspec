@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Functional'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'Functional is a library that simplifies functional programming in Swift.'
 
 # This description is used to generate tags and improve search results.
@@ -30,6 +30,9 @@ This library enable to use functional interfaces of Java, higher-order functions
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.9'
+  s.watchos.deployment_target = '3.0'
+  s.tvos.deployment_target = '9.0'
 
   s.source_files = 'Functional/Classes/**/*'
   
