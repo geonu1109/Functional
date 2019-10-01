@@ -9,19 +9,15 @@ public func run(_ block: Runnable) rethrows -> Void {
     try block()
 }
 
-public protocol HigherOrderFunctionsApplicable {}
-
-extension HigherOrderFunctionsApplicable {
+extension Fx {
     @discardableResult
-    public func also(_ block: Consumer<Self>) rethrows -> Self {
-        try block(self)
-        return self
+    public func also(_ block: Consumer<Wrapped>) rethrows -> Wrapped {
+        try block(self.value)
+        return self.value
     }
     
     @discardableResult
-    public func `let`<R>(_ block: Function<Self, R>) rethrows -> R {
-        return try block(self)
+    public func `let`<R>(_ block: Function<Wrapped, R>) rethrows -> R {
+        return try block(self.value)
     }
 }
-
-extension NSObject: HigherOrderFunctionsApplicable {}

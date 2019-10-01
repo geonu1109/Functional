@@ -10,10 +10,11 @@
 		1BFE86F918244F569ED3C8DA30F884C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		2177CCCAE2C1946023D305DD9565F902 /* Pods-Functional_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B54C7FC132D25C5CBB20083570F93EBA /* Pods-Functional_Tests-dummy.m */; };
 		65988A3D28109CBC6651CB9E178A0098 /* Functional-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B81FBDB92053FDFB352C307B64B3F497 /* Functional-dummy.m */; };
+		79E78E0B2342DFDB00D985A3 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E78E0A2342DFDB00D985A3 /* Bool.swift */; };
+		79E78E112342E15600D985A3 /* FunctionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E78E102342E15600D985A3 /* FunctionalExtension.swift */; };
+		79E78E132342E7ED00D985A3 /* HigherOrderFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E78E122342E7ED00D985A3 /* HigherOrderFunctions.swift */; };
 		79F34F172332760600C17ABF /* FunctionalInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F34F162332760600C17ABF /* FunctionalInterfaces.swift */; };
-		79F34F192332767F00C17ABF /* HigherOrderFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F34F182332767F00C17ABF /* HigherOrderFunctions.swift */; };
 		79F34F1B233278A800C17ABF /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F34F1A233278A800C17ABF /* Optional.swift */; };
-		79F34F1D23327EAF00C17ABF /* LogicalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F34F1C23327EAF00C17ABF /* LogicalFunctions.swift */; };
 		9D8CD08B16E0C9028C59AC78ED0E4A2F /* Pods-Functional_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C73B1D83ECD939F722F427E08A4AF47 /* Pods-Functional_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ACA9B4438C91787797856F62343C411E /* Functional-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D46E0C9892C942A85F2A094ADCB43A6F /* Functional-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9E6ABAE9DB23E85A35F7BCE6B58AB90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -42,10 +43,11 @@
 		53DD3B7BBEF0FC3D5B1106AEEF27306F /* Functional.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Functional.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E51911D400E483BD30853EB45E2BE8 /* Functional.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = Functional.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		6C73B1D83ECD939F722F427E08A4AF47 /* Pods-Functional_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Functional_Tests-umbrella.h"; sourceTree = "<group>"; };
+		79E78E0A2342DFDB00D985A3 /* Bool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = Functional/Classes/Bool.swift; sourceTree = "<group>"; };
+		79E78E102342E15600D985A3 /* FunctionalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FunctionalExtension.swift; path = Functional/Classes/FunctionalExtension.swift; sourceTree = "<group>"; };
+		79E78E122342E7ED00D985A3 /* HigherOrderFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HigherOrderFunctions.swift; path = Functional/Classes/HigherOrderFunctions.swift; sourceTree = "<group>"; };
 		79F34F162332760600C17ABF /* FunctionalInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FunctionalInterfaces.swift; path = Functional/Classes/FunctionalInterfaces.swift; sourceTree = "<group>"; };
-		79F34F182332767F00C17ABF /* HigherOrderFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HigherOrderFunctions.swift; path = Functional/Classes/HigherOrderFunctions.swift; sourceTree = "<group>"; };
 		79F34F1A233278A800C17ABF /* Optional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Functional/Classes/Optional.swift; sourceTree = "<group>"; };
-		79F34F1C23327EAF00C17ABF /* LogicalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogicalFunctions.swift; path = Functional/Classes/LogicalFunctions.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B2B0E27D03CF1108B3147FDEB6CC9233 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B54C7FC132D25C5CBB20083570F93EBA /* Pods-Functional_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Functional_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -169,9 +171,10 @@
 				0B195AF3B3E6417F8A71B5714E66F82F /* Pod */,
 				AF98A2B0B03389146C0F78EBE70A7C48 /* Support Files */,
 				79F34F162332760600C17ABF /* FunctionalInterfaces.swift */,
-				79F34F182332767F00C17ABF /* HigherOrderFunctions.swift */,
+				79E78E122342E7ED00D985A3 /* HigherOrderFunctions.swift */,
 				79F34F1A233278A800C17ABF /* Optional.swift */,
-				79F34F1C23327EAF00C17ABF /* LogicalFunctions.swift */,
+				79E78E0A2342DFDB00D985A3 /* Bool.swift */,
+				79E78E102342E15600D985A3 /* FunctionalExtension.swift */,
 			);
 			name = Functional;
 			path = ../..;
@@ -299,10 +302,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				65988A3D28109CBC6651CB9E178A0098 /* Functional-dummy.m in Sources */,
-				79F34F192332767F00C17ABF /* HigherOrderFunctions.swift in Sources */,
 				79F34F172332760600C17ABF /* FunctionalInterfaces.swift in Sources */,
 				79F34F1B233278A800C17ABF /* Optional.swift in Sources */,
-				79F34F1D23327EAF00C17ABF /* LogicalFunctions.swift in Sources */,
+				79E78E132342E7ED00D985A3 /* HigherOrderFunctions.swift in Sources */,
+				79E78E112342E15600D985A3 /* FunctionalExtension.swift in Sources */,
+				79E78E0B2342DFDB00D985A3 /* Bool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
