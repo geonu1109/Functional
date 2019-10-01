@@ -5,11 +5,16 @@
 //  Created by Geonu Jeon on 2019/09/18.
 //
 
-extension Optional {
-    public static func isPresent<Wrapped>(_ value: Optional<Wrapped>) -> Bool {
-        return value.isPresent
+public func isPresent<Wrapped>(_ value: Optional<Wrapped>) -> Bool {
+    switch value {
+    case .some:
+        return true
+    case .none:
+        return false
     }
-    
+}
+
+extension Optional {
     public var isPresent: Bool {
         switch self {
         case .some:
@@ -21,8 +26,8 @@ extension Optional {
     
     @discardableResult
     public func ifPresent(_ consumer: Consumer<Wrapped>) rethrows -> Optional<Wrapped> {
-        if self.isPresent {
-            try consumer(self!)
+        if let value = self {
+            try consumer(value)
         }
         return self
     }
