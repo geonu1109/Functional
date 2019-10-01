@@ -5,8 +5,8 @@
 //  Created by Geonu Jeon on 2019/10/01.
 //
 
-typealias Fx = FunctionalExtension
-typealias FxCompatible = FunctionalExtensionCompatible
+public typealias Fx = FunctionalExtension
+public typealias FxCompatible = FunctionalExtensionCompatible
 
 public struct FunctionalExtension<Wrapped> {
     public let value: Wrapped
