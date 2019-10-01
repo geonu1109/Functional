@@ -5,11 +5,11 @@
 //  Created by Geonu Jeon on 2019/09/18.
 //
 
+public func run(_ block: Runnable) rethrows -> Void {
+    try block()
+}
+
 extension Fx {
-    public static func run(_ block: Runnable) rethrows -> Void {
-        try block()
-    }
-    
     @discardableResult
     public func also(_ block: Consumer<Wrapped>) rethrows -> Wrapped {
         try block(self.value)
