@@ -6,12 +6,7 @@
 //
 
 public func isPresent<Wrapped>(_ value: Optional<Wrapped>) -> Bool {
-    switch value {
-    case .some:
-        return true
-    case .none:
-        return false
-    }
+    return value.isPresent
 }
 
 extension Optional {

@@ -6,19 +6,19 @@
 //
 
 public func not(_ value: Bool) -> Bool {
-    return !value
+    return value.not
 }
 
 public func and(_ lhs: Bool, _ rhs: Bool) -> Bool {
-    return lhs && rhs
+    return lhs.and(rhs)
 }
 
 public func or(_ lhs: Bool, _ rhs: Bool) -> Bool {
-    return lhs || rhs
+    return lhs.or(rhs)
 }
 
 public func xor(_ lhs: Bool, _ rhs: Bool) -> Bool {
-    return lhs != rhs
+    return lhs.xor(rhs)
 }
 
 extension Bool {
