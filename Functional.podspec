@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Functional'
-  s.version          = '0.1.6'
+  s.version          = '0.2.0'
   s.summary          = 'Functional is a swift library for clean functional programming.'
 
 # This description is used to generate tags and improve search results.
