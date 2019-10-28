@@ -21,3 +21,39 @@ extension Fx {
         return try block(self.value)
     }
 }
+
+public func curry<T1, T2, R>(_ function: @escaping (T1, T2) throws -> R) -> (T1) -> (T2) throws -> R {
+    return { (arg1) in
+        return { (arg2) in
+            return try function(arg1, arg2)
+        }
+    }
+}
+
+public func curry<T1, T2, T3, R>(_ function: @escaping (T1, T2, T3) throws -> R) -> (T1) -> (T2) -> (T3) throws -> R {
+    return { (arg1) in
+        return { (arg2) in
+            return { (arg3) in
+                return try function(arg1, arg2, arg3)
+            }
+        }
+    }
+}
+
+public func curry<T1, T2, T3, T4, R>(_ function: @escaping (T1, T2, T3, T4) throws -> R) -> (T1) -> (T2) -> (T3) -> (T4) throws -> R {
+    return { (arg1) in
+        return { (arg2) in
+            return { (arg3) in
+                return { (arg4) in
+                    return try function(arg1, arg2, arg3, arg4)
+                }
+            }
+        }
+    }
+}
+
+public func compose<T, U, R>(_ f: @escaping Function<U, R>, _ g: @escaping Function<T, U>) -> Function<T, R> {
+    return { (arg) in
+        return try f(g(arg))
+    }
+}
