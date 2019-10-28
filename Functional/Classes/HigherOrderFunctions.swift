@@ -22,38 +22,50 @@ extension Fx {
     }
 }
 
-public func curry<T1, T2, R>(_ function: @escaping (T1, T2) throws -> R) -> (T1) -> (T2) throws -> R {
+public func curry<T1, T2, R>(_ function: @escaping (T1, T2) -> R) -> (T1) -> (T2) -> R {
     return { (arg1) in
         return { (arg2) in
-            return try function(arg1, arg2)
+            return function(arg1, arg2)
         }
     }
 }
 
-public func curry<T1, T2, T3, R>(_ function: @escaping (T1, T2, T3) throws -> R) -> (T1) -> (T2) -> (T3) throws -> R {
+public func curry<T1, T2, T3, R>(_ function: @escaping (T1, T2, T3) -> R) -> (T1) -> (T2) -> (T3) -> R {
     return { (arg1) in
         return { (arg2) in
             return { (arg3) in
-                return try function(arg1, arg2, arg3)
+                return function(arg1, arg2, arg3)
             }
         }
     }
 }
 
-public func curry<T1, T2, T3, T4, R>(_ function: @escaping (T1, T2, T3, T4) throws -> R) -> (T1) -> (T2) -> (T3) -> (T4) throws -> R {
-    return { (arg1) in
-        return { (arg2) in
-            return { (arg3) in
-                return { (arg4) in
-                    return try function(arg1, arg2, arg3, arg4)
-                }
-            }
-        }
+public func uncurry<T1, T2, R>(_ curriedFunction: @escaping (T1) -> (T2) -> R) -> (T1, T2) -> R {
+    return { (arg1, arg2) in
+        return curriedFunction(arg1)(arg2)
+    }
+}
+
+public func uncurry<T1, T2, T3, R>(_ curriedFunction: @escaping (T1) -> (T2) -> (T3) -> R) -> (T1, T2, T3) -> R {
+    return { (arg1, arg2, arg3) in
+        return curriedFunction(arg1)(arg2)(arg3)
     }
 }
 
 public func compose<T, U, R>(_ f: @escaping Function<U, R>, _ g: @escaping Function<T, U>) -> Function<T, R> {
     return { (arg) in
         return try f(g(arg))
+    }
+}
+
+public func * <T, U, R>(lhs: @escaping Function<U, R>, rhs: @escaping Function<T, U>) -> Function<T, R> {
+    return compose(lhs, rhs)
+}
+
+public func flip<T1, T2, R>(_ function: @escaping (T1) -> (T2) -> R) -> (T2) -> (T1) -> R {
+    return { (arg1) in
+        return { (arg2) in
+            return function(arg2)(arg1)
+        }
     }
 }
